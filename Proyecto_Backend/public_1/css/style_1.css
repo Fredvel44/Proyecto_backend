@@ -1,0 +1,217 @@
+/*!
+ * Bootstrap v4.3.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Estilos para el proyecto.*/
+
+/*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+Paleta de colores
+color: rgb(46, 103, 71);
+color: rgb(169, 161, 145);
+color: aqua;
+#15172b;
+#eee;
+*/
+
+*{
+  box-sizing: border-box;
+}
+/*Estilos header*/
+
+header{
+  padding: 50px;
+  text-align:center;
+  background-image:url('../img/header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+header div{
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: rgba(0,0,0,0.2);
+  font-family: 'Franklin Gothic Medium';
+  color: whitesmoke;
+  font-size: 28px;
+}
+
+header div h2{
+  font-family:'Arial Narrow';
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    header {
+        background-position: center;
+    }
+}
+
+/* Estilos navbar*/
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(52, 92, 69);
+  position: sticky;
+  top: 0%;
+  z-index: 100;
+}
+
+.navbar a{
+  display: flex;
+  color: antiquewhite;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 10px 10px;
+  text-decoration: none;   
+}
+
+.navbar a:hover {
+  background-color: rgb(169, 161, 145) ;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+      flex-direction: column;
+      position: unset;
+  }
+.navbar a {
+  text-align: center;
+}
+}
+
+/*Estilos Body*/
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: Urbanist, sans-serif;
+    font-size: 16px;
+}
+    /*estilos parte principal*/
+
+@media (max-width: 800px){
+  .Principal{
+      flex-direction: column;
+  }
+}
+
+.Principal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/background_2.jpg');
+  background-size:cover;
+}
+
+@media (max-width:800) {
+  .Principal p{
+    flex-direction: column;
+  }
+}
+
+.Principal p{
+padding-top: 5%;
+padding-left: 5%;
+padding-right: 5%;
+text-align:center;
+font-size: 30px;
+font-family: 'Franklin Gothic Medium';
+}
+
+/*Estilo Formulario*/
+.Principal form{
+  padding: 50px;
+  border: 5 outset;
+  text-align: justify;
+  border-radius: 5%;
+}
+
+.Principal label{
+  color: #15172b;
+  font-size: 1.1rem;
+  padding: 2%;
+  border-radius: 10px;
+}
+.Principal input{
+  display: flex;
+  background-color: oldlace;
+}
+.Principal .title {
+  color: #15172b;
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.Principal .subtitle {
+  color: #15172b;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+
+  /*Estilos del main*/
+  main {
+    display: flex;
+    padding: 50px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    background-color:0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}
+
+/*estilos bootstrap*/
+
+.card-img-top{
+  height: 140px;
+  object-fit:cover;
+  border-radius: 10px;
+  border-radius: 2%;
+}
+.card-title{
+  text-align: center;
+  font-size: 16px;
+}
+.card-body{
+  height: 120px;
+}
+
+.card-body h6{
+text-align: center;
+font-size: 10px;
+}
+
+.carousel-inner{
+  display: flex;
+  width: auto;
+}
+
+@media (max-width: 800px){
+.carousel-inner{
+  flex-direction: column;
+}
+}
+
+/*Estilos footer*/
+
+footer{
+  padding: 5px;
+  text-align: center;
+  background-color:aqua;
+  color: black;
+}
+
